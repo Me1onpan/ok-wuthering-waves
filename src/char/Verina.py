@@ -22,7 +22,7 @@ class Verina(Healer):
             self.click_resonance(send_click=False,post_sleep=0.35)
         if self.echo_available():
             self.click_echo()
-        if self.is_mouse_forte_full() or not self.has_intro:
+        if self.is_mouse_forte_full():
             self.task.jump(after_sleep=0.1)
             self.continues_normal_attack(1.1)
         elif not liberated:
